@@ -1,0 +1,235 @@
+#product-list{
+    ul{
+        li{
+            background: #eeefff;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            a{
+                &.add_to_cart_button{
+                    display: none;
+                }
+                .price{
+                    display: none;
+                }
+                &:hover{
+                    h2{
+                        color: var( --e-global-color-0cb23b7 );
+                    }
+                }
+            }
+        }
+    }
+}
+
+#why-chooose-us{
+    .elementor-widget-image-box{
+        figure{
+            border: 1px solid var( --e-global-color-07653ec );
+            padding: 16px;
+            border-radius: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 115px;
+            height: 115px;
+            margin-bottom: 20px;
+            a{
+                display: block;
+                height: auto;
+                width: 73px;
+                height: 73px;
+                
+            }
+            img{
+                background:var( --e-global-color-07653ec );
+                padding: 16px;
+            }
+        }
+
+        h3{
+            min-height: 65px;
+        }
+
+        .elementor-image-box-description{
+            min-height: 100px;
+            a{
+                transition: 0.3s all ease;
+                color: var( --e-global-color-fad44ae );
+                &:hover{
+                    color: var( --e-global-color-49ab6e6 );
+                }
+            }
+        }
+
+    }
+}
+.page-template{
+    &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: url("/wp-content/uploads/2025/01/Ornament-SYJPRRW.png");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: 2000px auto;
+        min-height: 500px;
+        opacity: .1 ;
+        content: "";
+    }
+    &.home{
+        &:before{
+            display: none;
+        }
+    }
+}
+
+#page-title{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+        min-height: 300px;
+    }
+}
+
+a.link{
+    color: var( --e-global-color-49ab6e6 )
+}
+
+
+#category-list{
+    ul{
+        li{
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+            h2{
+                transition: 0.3s all ease;
+            }
+            &:hover{
+                h2{
+                    color: var( --e-global-color-49ab6e6 )
+                }
+            }
+        }
+    }
+}
+
+#blog{
+    .elementor-post__card{
+        border-radius: 10px;
+        img{
+            transition: transform .2s;
+        }
+        &:hover{
+            img{
+                transform: scale(1.05) translate(-50%,-50%);
+            }
+        }
+    }
+    .elementor-post__thumbnail__link{
+        margin: 0;
+    }
+    .elementor-post__thumbnail{
+        overflow: hidden;
+    }
+    article{
+        position: relative;
+        .elementor-post__text{
+            // position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var( --e-global-color-49ab6e6 );
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            h3{
+                margin: 0;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+#contact-box{
+    .elementor-widget-container{
+        // padding: 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .elementor-widget-icon-box{
+        background: #eeefff;
+        border-radius: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .elementor-icon-box-wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .elementor-icon-box-content{
+            text-align: left;
+            h3{
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+        .elementor-icon-box-icon{
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 10px;
+            max-height: 57px;
+            a{
+                // border-radius: 20px;
+                // background-image: linear-gradient(180deg, #E0E2FF 0%, #EEEFFF 100%);
+            }
+        }
+    }
+}
+
+#contact-form{
+    form{
+        .elementor-labels-above{
+            > div{
+                width: 50%;
+                @media screen and (max-width: 480px) {
+                    width: 100%;
+                }
+                &.e-form__buttons{
+                    width: 100%;
+                    margin-top: 20px;
+                    button{
+                        max-width: 200px;
+                        @media screen and (max-width: 480px) {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#footer{
+    nav{
+        ul{
+            li{
+                a{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
